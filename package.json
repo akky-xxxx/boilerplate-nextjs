@@ -1,18 +1,18 @@
 {
   "name": "boilerplate-nextjs",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "akky--xxxx <114.s.aki@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "fix": "yarn fix:pack",
     "fix:pack": "fixpack"
   },
-  "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "fixpack": "^4.0.0",
     "husky": "^7.0.4",
     "prettier": "^2.5.1"
-  }
+  },
+  "version": "1.0.0",
+  "author": "akky--xxxx <114.s.aki@gmail.com>",
+  "main": "index.js"
 }
