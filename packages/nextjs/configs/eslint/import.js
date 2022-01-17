@@ -18,4 +18,12 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    {
+      files: ["**/*.test.tsx", "**/*.stories.tsx"],
+      rules: {
+        "import/no-extraneous-dependencies": OFF,
+      },
+    },
+  ],
 }
