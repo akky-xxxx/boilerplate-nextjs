@@ -2,18 +2,20 @@
   "name": "nextjs",
   "private": true,
   "scripts": {
-    "check-code": "run-p type-check",
+    "check-code": "run-p lint type-check",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "fix": "run-p fix:*",
+    "fix-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\" --fix",
     "fix-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --write",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --write",
-    "fix:ts": "run-s fix-ts-by-prettier",
+    "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
     "lint": "run-p lint:*",
+    "lint-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\"",
     "lint-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --check",
     "lint:configs": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --check",
-    "lint:ts": "run-s lint-ts-by-prettier",
+    "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
     "type-check": "tsc"
   },
   "dependencies": {
