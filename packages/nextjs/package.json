@@ -2,10 +2,12 @@
   "name": "nextjs",
   "private": true,
   "scripts": {
+    "check-code": "run-p type-check",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@aspida/axios": "^1.7.1",
