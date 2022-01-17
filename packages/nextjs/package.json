@@ -12,6 +12,7 @@
     "fix-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --write",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --write",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
+    "fix:pack": "fixpack",
     "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
     "lint": "run-p lint:*",
     "lint-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\"",
