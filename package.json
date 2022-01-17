@@ -2,8 +2,9 @@
   "name": "boilerplate-nextjs",
   "license": "MIT",
   "scripts": {
-    "fix": "yarn fix:pack",
+    "fix": "yarn fix:pack & yarn fix:js",
     "fix:pack": "fixpack",
+    "fix:js": "prettier \"./*.js\" --write",
     "prepare": "husky install"
   },
   "devDependencies": {
