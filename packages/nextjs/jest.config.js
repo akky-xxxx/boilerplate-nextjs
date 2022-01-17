@@ -1,8 +1,6 @@
 module.exports = {
   roots: ["<rootDir>/src"],
-  setupFilesAfterEnv: [
-    "@testing-library/jest-dom/extend-expect"
-  ],
+  setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
   transform: {
     "^.+\\.(ts|tsx)$": [
       "@swc/jest",
@@ -10,7 +8,7 @@ module.exports = {
         sourceMaps: true, // エラーを見やすくする( 有効じゃないと内容がズレて表示されます )
 
         module: {
-          type: "commonjs",  // 出力するファイルをcommonjsとする
+          type: "commonjs", // 出力するファイルをcommonjsとする
         },
 
         jsc: {
@@ -29,8 +27,6 @@ module.exports = {
       },
     ],
   },
-  testMatch: [
-    "**/?(*.)test.ts?(x)"
-  ],
+  testMatch: ["**/?(*.)test.ts?(x)"],
   testEnvironment: "jsdom",
 }

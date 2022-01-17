@@ -1,25 +1,24 @@
 {
   "name": "nextjs",
-  "private": true,
   "scripts": {
+    "build": "next build",
     "check-all": "npm-run-all fix -p spell-check lint:css type-check -s test",
     "check-code": "run-p spell-check lint type-check",
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
     "fix": "run-p fix:*",
     "fix-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\" --fix",
     "fix-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --write",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --write",
-    "lint:css": "stylelint './src/**/*.{ts,tsx}'",
     "fix:pack": "fixpack",
     "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
     "lint": "run-p lint:*",
     "lint-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\"",
     "lint-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --check",
     "lint:configs": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --check",
+    "lint:css": "stylelint './src/**/*.{ts,tsx}'",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
     "spell-check": "cspell \"./src/**/*.{ts,tsx}\"",
+    "start": "next start",
     "test": "echo \"test を実装したら差し替える\"",
     "type-check": "tsc"
   },
@@ -78,5 +77,6 @@
     "stylelint-processor-styled-components": "^1.10.0",
     "ts-unused-exports": "^7.0.3",
     "typescript": "^4.5.4"
-  }
+  },
+  "private": true
 }
