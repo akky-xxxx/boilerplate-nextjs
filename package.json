@@ -3,8 +3,8 @@
   "license": "MIT",
   "scripts": {
     "fix": "yarn fix:pack & yarn fix:js",
-    "fix:pack": "fixpack",
     "fix:js": "prettier \"./*.js\" --write",
+    "fix:pack": "fixpack",
     "prepare": "husky install"
   },
   "devDependencies": {
