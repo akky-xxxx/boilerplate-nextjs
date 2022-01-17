@@ -2,6 +2,7 @@
   "name": "nextjs",
   "private": true,
   "scripts": {
+    "check-all": "npm-run-all fix -p lint:css type-check",
     "check-code": "run-p lint type-check",
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +11,7 @@
     "fix-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\" --fix",
     "fix-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --write",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --write",
+    "lint:css": "stylelint './src/**/*.{ts,tsx}'",
     "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
     "lint": "run-p lint:*",
     "lint-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\"",
