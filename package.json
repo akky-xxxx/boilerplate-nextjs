@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "akky--xxxx <114.s.aki@gmail.com>",
+  "scripts": {
+    "fix": "yarn fix:pack",
+    "fix:pack": "fixpack"
+  },
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
