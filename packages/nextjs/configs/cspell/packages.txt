@@ -1,0 +1,4 @@
+strapi
+camelcase
+aspida
+pino

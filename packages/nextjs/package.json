@@ -2,8 +2,8 @@
   "name": "nextjs",
   "private": true,
   "scripts": {
-    "check-all": "npm-run-all fix -p lint:css type-check",
-    "check-code": "run-p lint type-check",
+    "check-all": "npm-run-all fix -p spell-check lint:css type-check",
+    "check-code": "run-p spell-check lint type-check",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -18,6 +18,7 @@
     "lint-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --check",
     "lint:configs": "prettier \"./*.{js,json}\" \"./**/*.js\" \"!**/.next\" --check",
     "lint:ts": "run-s lint-ts-by-eslint lint-ts-by-prettier",
+    "spell-check": "cspell \"./src/**/*.{ts,tsx}\"",
     "type-check": "tsc"
   },
   "dependencies": {
