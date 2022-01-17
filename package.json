@@ -16,5 +16,8 @@
   },
   "version": "1.0.0",
   "author": "akky--xxxx <114.s.aki@gmail.com>",
-  "main": "index.js"
+  "main": "index.js",
+  "engines": {
+    "node": "16.13.2"
+  }
 }
