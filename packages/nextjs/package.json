@@ -15,6 +15,7 @@
     "hygen:ac": "hygen new atoms-component",
     "hygen:mc": "hygen new molecules-component",
     "hygen:pc": "hygen new pages-component",
+    "hygen:tc": "hygen new templates-component",
     "lint": "run-p lint:*",
     "lint-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\"",
     "lint-ts-by-prettier": "prettier \"./src/**/*.{ts,tsx}\" --check",
