@@ -13,6 +13,7 @@
     "fix:pack": "fixpack",
     "fix:ts": "run-s fix-ts-by-eslint fix-ts-by-prettier",
     "hygen:ac": "hygen new atoms-component",
+    "hygen:mc": "hygen new molecules-component",
     "hygen:pc": "hygen new pages-component",
     "lint": "run-p lint:*",
     "lint-ts-by-eslint": "eslint \"./src/**/*.{ts,tsx}\"",
