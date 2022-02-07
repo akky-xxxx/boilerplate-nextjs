@@ -18,6 +18,6 @@
   "author": "akky--xxxx <114.s.aki@gmail.com>",
   "main": "index.js",
   "engines": {
-    "node": "16.13.2"
+    "node": "14.19.0"
   }
 }
