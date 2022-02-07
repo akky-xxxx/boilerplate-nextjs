@@ -1,6 +1,10 @@
 {
   "name": "nextjs",
   "scripts": {
+    "api-gen": "run-p api-gen:*",
+    "api-gen:strapi": "run-s apiClient:rm:strapi apiClient:gen:strapi",
+    "apiClient:gen:strapi": "openapi2aspida -c \"./spec/openapi2aspida-config/strapi.js\"",
+    "apiClient:rm:strapi": "shx rm -rf \"./src/libs/apiClient/strapi\"",
     "build": "next build",
     "build:storybook": "build-storybook",
     "check-all": "npm-run-all fix -p spell-check lint:css type-check -s test",
