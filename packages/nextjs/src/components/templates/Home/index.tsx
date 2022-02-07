@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Image from "next/image"
 import { VFC } from "react"
+import { TemporaryInput } from "../../molecules/TemporaryInput"
 
 export const HomeTemplate: VFC = () => (
   <div>
@@ -40,6 +41,8 @@ export const HomeTemplate: VFC = () => (
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
       </div>
+
+      <TemporaryInput />
     </main>
 
     <footer>
