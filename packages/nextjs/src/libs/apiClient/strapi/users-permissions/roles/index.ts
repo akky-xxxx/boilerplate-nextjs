@@ -1,5 +1,5 @@
 /* eslint-disable */
-import type * as Types from '../../@types'
+import type * as Types from "../../@types"
 
 export type Methods = {
   /** Retrieve all role documents */
@@ -12,7 +12,7 @@ export type Methods = {
       /** Skip a specific number of entries (especially useful for pagination) */
       _start?: number
       /** Get entries that matches exactly your input */
-      '='?: string
+      "="?: string
       /** Get records that are not equals to something */
       _ne?: string
       /** Get record that are lower than a value */

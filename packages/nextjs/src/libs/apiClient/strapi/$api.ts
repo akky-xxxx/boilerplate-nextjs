@@ -1,14 +1,12 @@
 /* eslint-disable */
 // prettier-ignore
-import { AspidaClient, BasicHeaders, dataToURLString } from 'aspida'
+import { AspidaClient,BasicHeaders,dataToURLString } from 'aspida'
 // prettier-ignore
 import { Methods as Methods0 } from './articles'
 // prettier-ignore
-import { Methods as Methods1 } from './articles/_id@string'
-// prettier-ignore
 import { Methods as Methods2 } from './articles/count'
 // prettier-ignore
-import { Methods as Methods3 } from './auth/_provider@string/callback'
+import { Methods as Methods1 } from './articles/_id@string'
 // prettier-ignore
 import { Methods as Methods4 } from './auth/email-confirmation'
 // prettier-ignore
@@ -22,6 +20,8 @@ import { Methods as Methods8 } from './auth/reset-password'
 // prettier-ignore
 import { Methods as Methods9 } from './auth/send-email-confirmation'
 // prettier-ignore
+import { Methods as Methods3 } from './auth/_provider@string/callback'
+// prettier-ignore
 import { Methods as Methods10 } from './connect/_any'
 // prettier-ignore
 import { Methods as Methods11 } from './email'
@@ -34,17 +34,13 @@ import { Methods as Methods14 } from './upload'
 // prettier-ignore
 import { Methods as Methods15 } from './upload/files'
 // prettier-ignore
-import { Methods as Methods16 } from './upload/files/_id@string'
-// prettier-ignore
 import { Methods as Methods17 } from './upload/files/count'
+// prettier-ignore
+import { Methods as Methods16 } from './upload/files/_id@string'
 // prettier-ignore
 import { Methods as Methods18 } from './upload/search/_id@string'
 // prettier-ignore
 import { Methods as Methods19 } from './users'
-// prettier-ignore
-import { Methods as Methods20 } from './users/_id@string'
-// prettier-ignore
-import { Methods as Methods21 } from './users/me'
 // prettier-ignore
 import { Methods as Methods22 } from './users-permissions/roles'
 // prettier-ignore
@@ -53,6 +49,10 @@ import { Methods as Methods23 } from './users-permissions/roles/_id@string'
 import { Methods as Methods24 } from './users-permissions/roles/_role@string'
 // prettier-ignore
 import { Methods as Methods25 } from './users-permissions/search/_id@string'
+// prettier-ignore
+import { Methods as Methods21 } from './users/me'
+// prettier-ignore
+import { Methods as Methods20 } from './users/_id@string'
 
 // prettier-ignore
 const api = <T>({ baseURL, fetch }: AspidaClient<T>) => {
