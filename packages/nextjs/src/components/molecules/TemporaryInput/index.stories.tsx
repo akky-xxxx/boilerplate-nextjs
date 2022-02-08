@@ -5,13 +5,13 @@ import { Template } from "./Template"
 type TemporaryInputType = typeof Template
 
 const meta: Meta<ComponentProps<typeof Template>> = {
-  component: Template,
   args: {
-    isChecked: false,
     handleToggleChecked: () => {
       /* 仮 */
     },
+    isChecked: false,
   },
+  component: Template,
 }
 export default meta
 

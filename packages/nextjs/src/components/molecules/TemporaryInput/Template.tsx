@@ -7,7 +7,11 @@ export const Template: VFC<TemporaryInputProps> = (props) => {
     <div>
       <label>
         ラベルテキスト
-        <input type="checkbox" checked={isChecked} onChange={handleToggleChecked}/>
+        <input
+          type="checkbox"
+          checked={isChecked}
+          onChange={handleToggleChecked}
+        />
       </label>
     </div>
   )

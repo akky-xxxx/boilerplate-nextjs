@@ -1,5 +1,5 @@
 import { ComponentStoryObj, Meta } from "@storybook/react"
-import { within, userEvent } from "@storybook/testing-library"
+import { userEvent, within } from "@storybook/testing-library"
 import { HomeTemplate } from "./index"
 
 type HomeTemplateType = typeof HomeTemplate
@@ -13,8 +13,8 @@ export default meta
 export const Default: ComponentStoryObj<HomeTemplateType> = {}
 
 export const CheckedCheckBox: ComponentStoryObj<HomeTemplateType> = {
-  play: async ({ canvasElement }) => {
+  play: ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    await userEvent.click(canvas.getByText("ラベルテキスト"))
+    userEvent.click(canvas.getByText("ラベルテキスト"))
   },
 }

@@ -13,12 +13,16 @@ describe("HomePage", () => {
   it("ラベルをクリックしないと checkbox が uncheck のまま", async () => {
     const { container } = render(<Default />)
     await Default.play({ canvasElement: container })
-    expect(screen.queryByLabelText<HTMLInputElement>("ラベルテキスト")?.checked).toBe(false)
+    expect(
+      screen.queryByLabelText<HTMLInputElement>("ラベルテキスト")?.checked,
+    ).toBe(false)
   })
 
   it("ラベルをクリックすると checkbox が checked になる", async () => {
     const { container } = render(<CheckedCheckBox />)
     await CheckedCheckBox.play({ canvasElement: container })
-    expect(screen.queryByLabelText<HTMLInputElement>("ラベルテキスト")?.checked).toBe(true)
+    expect(
+      screen.queryByLabelText<HTMLInputElement>("ラベルテキスト")?.checked,
+    ).toBe(true)
   })
 })

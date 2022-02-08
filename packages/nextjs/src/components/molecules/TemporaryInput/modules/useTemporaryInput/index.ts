@@ -8,5 +8,5 @@ export const useTemporaryInput: UseTemporaryInput = () => {
   const handleToggleChecked = () => {
     setIsChecked(!isChecked)
   }
-  return { isChecked, handleToggleChecked }
+  return { handleToggleChecked, isChecked }
 }
