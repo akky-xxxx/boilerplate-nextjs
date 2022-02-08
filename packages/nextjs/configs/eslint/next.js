@@ -6,10 +6,6 @@ module.exports = {
     "react/prop-types": OFF,
     "react/jsx-fragments": [ERROR, "element"],
     "react/jsx-filename-extension": [ERROR, { extensions: [".ts", ".tsx"] }],
-    "react/function-component-definition": [
-      ERROR,
-      { namedComponents: "arrow-function" },
-    ],
     "jsx-a11y/anchor-is-valid": [
       ERROR,
       {
@@ -17,6 +13,16 @@ module.exports = {
         specialLink: ["hrefLeft", "hrefRight"],
         aspects: ["invalidHref", "preferButton"],
       },
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      ERROR,
+      {
+        controlComponents: ["StyledTextarea"],
+      },
+    ],
+    "react/function-component-definition": [
+      ERROR,
+      { namedComponents: "arrow-function" },
     ],
   },
   overrides: [

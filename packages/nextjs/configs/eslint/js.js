@@ -12,4 +12,12 @@ module.exports = {
     "no-undefined": ERROR,
     "sort-keys": WARN,
   },
+  overrides: [
+    {
+      files: ["**/*.test.ts", "**/*.test.tsx"],
+      rules: {
+        "max-nested-callbacks": OFF,
+      },
+    },
+  ],
 }

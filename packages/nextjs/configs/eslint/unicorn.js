@@ -22,7 +22,9 @@ module.exports = {
         allowList: {
           Props: true,
           props: true,
+          Req: true,
           req: true,
+          Res: true,
           res: true,
         },
       },

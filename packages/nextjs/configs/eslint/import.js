@@ -20,7 +20,12 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["**/*.test.tsx", "**/*.stories.tsx"],
+      files: [
+        "**/*.test.ts",
+        "**/*.test.tsx",
+        "**/*.stories.ts",
+        "**/*.stories.tsx",
+      ],
       rules: {
         "import/no-extraneous-dependencies": OFF,
       },
