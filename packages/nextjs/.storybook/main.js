@@ -3,6 +3,8 @@ module.exports = {
   addons: [
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "storybook-addon-next-router",
+    "storybook-addon-pseudo-states",
     "storycap",
   ],
   features: {
