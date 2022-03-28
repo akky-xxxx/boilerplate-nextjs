@@ -31,6 +31,5 @@ app
     })
   })
   .catch((error: unknown) => {
-    console.log({ error })
     fatalLoggerMain(String(error))
   })
