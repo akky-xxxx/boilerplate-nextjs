@@ -2,6 +2,11 @@
   "name": "boilerplate-nextjs",
   "license": "MIT",
   "scripts": {
+    "check-all": "run-p fix check-all:*",
+    "check-all:nextjs": "yarn workspace nextjs check-all",
+    "dev": "run-p dev:*",
+    "dev:nextjs": "yarn workspace nextjs dev",
+    "dev:strapi": "yarn workspace strapi dev",
     "fix": "yarn fix:pack & yarn fix:js",
     "fix:js": "prettier \"./*.js\" --write",
     "fix:pack": "fixpack",
