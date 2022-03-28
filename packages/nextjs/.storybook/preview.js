@@ -23,8 +23,4 @@ export const parameters = {
   layout: "fullscreen",
 }
 
-addDecorator((storyFn) => (
-  <Fragment>
-    {storyFn()}
-  </Fragment>
-))
+addDecorator((storyFn) => <Fragment>{storyFn()}</Fragment>)

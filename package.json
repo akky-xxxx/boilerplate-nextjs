@@ -19,14 +19,14 @@
     "husky": "^7.0.4",
     "prettier": "^2.5.1"
   },
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "version": "1.0.0",
   "author": "akky--xxxx <114.s.aki@gmail.com>",
+  "private": true,
   "main": "index.js",
   "engines": {
     "node": "14.19.0"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
