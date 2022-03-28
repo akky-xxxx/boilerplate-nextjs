@@ -11,6 +11,8 @@ type ApiHandlerMain = RequestHandler
 type ApiHandler = (callback: ApiHandlerCallback) => ApiHandlerMain
 
 export const apiHandler: ApiHandler = (callback) => {
+  // FIXME: json を返してるから resolve, reject できない
+  // eslint-disable-next-line @typescript-eslint/no-misused-promises
   const apiHandlerMain: ApiHandlerMain = async (req, res, next) => {
     try {
       const result = await callback(req, res)
